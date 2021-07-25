@@ -27,7 +27,7 @@
       -e "KONG_PG_USER=kong" \
       -e "KONG_PG_PASSWORD=kong" \
       -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
-      kong:latest kong migrations bootstrap
+      kong:2.5.0 kong migrations bootstrap
       ```
 - Bước 5: Chạy Kong
   - Sử dụng câu lệnh:
@@ -46,9 +46,9 @@
       -e "KONG_ADMIN_LISTEN=0.0.0.0:8001, 0.0.0.0:8444 ssl" \
       -p 8000:8000 \
       -p 8443:8443 \
-      -p 127.0.0.1:8001:8001 \
+      -p 10.12.0.10:8001:8001 \
       -p 127.0.0.1:8444:8444 \
-      kong:latest
+      kong:2.5.0
       ```
 - Bước 6: Kiểm tra  
   - Sử dụng câu lệnh:
