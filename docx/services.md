@@ -9,5 +9,6 @@
 ![alts](../images/kong5.png)
 
 ## Add Services
-![alts](../images/addsvc1.png)         ![alts](../images/addsvc2.png)
+*Để dễ hình dung, ở đây tôi dùng 2 cách khác nhau là sử dụng konga và Admin API để tạo services*
 
+![alts](../images/addsvc.png)
