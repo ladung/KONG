@@ -87,7 +87,9 @@ Sử dụng câu lệnh:
 - Bước 2: Chạy docker
         ```
         docker run --rm -e POSTGRES_USER=konga -e POSTGRES_DB=konga -e POSTGRES_PASSWORD=konga -v data:/var/lib/postgresql/data --name postgres -d --network main-link postgres:9.6-alpine
+        
         docker run --network main-link --rm pantsel/konga:latest -c prepare -a postgres -u postgresql://konga:konga@postgres:5432/konga
+        
         docker run -p 1337:1337 \
          --network main-link \
          -e "TOKEN_SECRET=ffffssf" \
